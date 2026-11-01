@@ -29,14 +29,6 @@ int SwitchDiameter(not_null<const style::Toggle *> st) {
 	return AyuUiSettings::isMaterialSwitches() ? st->diameter : st::defaultToggleDiameter;
 }
 
-int SwitchDiameter(not_null<const style::Check *> st) {
-	return AyuUiSettings::isMaterialSwitches() ? st->diameter : st::defaultToggleDiameter;
-}
-
-int SwitchDiameter(not_null<const style::Radio *> st) {
-	return AyuUiSettings::isMaterialSwitches() ? st->diameter : st::defaultToggleDiameter;
-}
-
 } // namespace
 
 AbstractCheckView::AbstractCheckView(int duration, bool checked, Fn<void()> updateCallback)
